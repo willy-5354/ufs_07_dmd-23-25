@@ -1,3 +1,8 @@
 body{ 
     background-color: red;
 }
+
+.site-logo-wrapper img{
+    max-width: 120px;
+
+}
