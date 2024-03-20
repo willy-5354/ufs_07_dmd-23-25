@@ -3,6 +3,14 @@ body{
     font-family: "Roboto Serif";
 }
 
+/* dobbiamo far si che l'immagine si adatti al display della macchina che guarderà il sito web */
+img{
+    display: block; /* proprietà block in quanto possiamo settare la larghezza e l'altezza */ 
+    height: auto;
+    width: 100%;
+}
+
+
 .site-logo-wrapper img{
     max-width: 120px;
 
@@ -22,4 +30,43 @@ body{
     display:flex;
     justify-content: space-between;
     text-align: center;
+}
+
+
+.hero {
+    position: relative;
+    overflow: hidden; /* tutto ciò che va oltre al tuo flusso devi nasconderlo */
+    height: 800px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover; 
+    /* prende l'immagine e dice che deve occupare tutto lo spazio in altezza e larghezza, ma senza deformarsi quando rimpicciolisco e ingrandisco la pagina */
+    opacity: 0.5;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    color: white;
+
+    h1{
+        font-size: 3rem;
+
+    }
+    p{
+        font-size: 1.75rem;
+    }
 }

@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="assets/fonts/roboto_serif/stylesheet.css">
 
         <link rel="stylesheet" href="assets/styles/reset.css">
+          <!-- il reset.css è una pratica o concetto che ci serve per concatenare due file. Consentirà, quindi, di sovrascrivere il file aggiungendo più elementi(in questo caso per togliere lo spazio "width" dal lato della pagina sinistra) -->
         <link rel="stylesheet" href="assets/styles/main.css">
-        <!-- il reset.css è una pratica o concetto che ci serve per concatenare due file. Consentirà, quindi, di sovrascrivere il file aggiungendo più elementi(in questo caso per togliere lo spazio "width" dal lato della pagina sinistra) -->
     </head>
 
     <body>
@@ -25,19 +25,35 @@
              <!-- inizalizzo un immagine al mio web site-->
              <a href="index.html" class="site-logo-wrapper" title="Clicca qui per tornare alla 
              HomePage"> 
-                 <img src="assets/images/logo.png" alt=""></a>
-
+                 <img src="assets/images/logo.png" alt="immagine logo" class="image_logo"></a>
             <!-- inizializzo nav- bar per reindirizzamento su diverse pagine-->
             <nav>
                 <ul>
                     <li class="title-link"><a href="index.html" class="background-title">Home</a></li>
                     <li class="title-link"><a href="index.html" class="background-title">about</a></li>
                     <li class="title-link"><a href="index.html" class="background-title">contatti</a></li>
+                    <li class="title-link"><a href="index.html" class="background-title">Dove siamo</a></li>
                 </ul>
             </nav>
            
         </header>
 
+    
+
+        <main> <!-- il main serve per rappresentare l'area principale del sito web-->
+
+            <!-- section serve per definire una sezione dell'area principale-->
+            <section class="hero">
+                <img src="assets/images/mare.avif" alt="mare in spiaggia" class="hero-image">
+
+                <!--creiamo il contenitore che conterrà il testo-->
+                <div class="hero-content"> 
+                    <h1> Lorem ipsum</h1>
+                    <p> qui ci sarà il paragrafo</p>
+                </div>
+            </section>
+
+        </main>
     
     </body>
 
