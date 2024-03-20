@@ -1,15 +1,27 @@
 <!-- questo serve per creare un commento in codice html.css (scorciatoia shift + cmd + 7)-->
+<!-- ricordati che in html.css vige l'ordine gerarchio, dunque: 
+    - prima va la modifica del font
+    - poi il reset.css -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing page</title>
+
+         <!-- inizializzo il font-size al mio sito-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/styles/reset.css">
         <link rel="stylesheet" href="assets/styles/main.css">
         <!-- il reset.css è una pratica o concetto che ci serve per concatenare due file. Consentirà, quindi, di sovrascrivere il file aggiungendo più elementi(in questo caso per togliere lo spazio "width" dal lato della pagina sinistra) -->
-        <link rel="stylesheet" href="assets/reset.css"> 
-    </head>
+        
+         
 
+    </head>
     <body>
         <header class="site-header" >
 
@@ -26,10 +38,10 @@
                     <li class="title-link"><a href="index.html" class="background-title">contatti</a></li>
                 </ul>
             </nav>
-
            
         </header>
 
+    
     </body>
 
 </html>

@@ -1,5 +1,6 @@
 body{ 
     background-color: white;
+    font-family: "Roboto Serif";
 }
 
 .site-logo-wrapper img{
@@ -21,10 +22,4 @@ body{
     display:flex;
     justify-content: space-between;
     text-align: center;
-}
-body{
-    font-family: Roboto;
-}
-a{
-    text-decoration: none;
 }
