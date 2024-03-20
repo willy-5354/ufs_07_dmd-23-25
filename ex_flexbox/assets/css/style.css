@@ -1,0 +1,386 @@
+/* classe padre */ 
+
+/* attributi della classe padre(parent) */ 
+.parent {
+    min-height: calc(100em - 4em);  /* NB: 1em = 16 pixel */ 
+    background-color: #8C22C7;
+    border: 1px solid black;
+    padding: 2em;
+    display: flex;
+    gap: 1em; 
+}
+
+ /* attributi della classe figlio (child) */ 
+
+.child {
+    background-color: #C76522;
+    width: 200px;
+    height: 200px;
+}
+
+/* classe padre per la modifica dei numeri (1-2-3)  */ 
+
+.number_title{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+/* 
+    Tips 
+    Usa e crea classi in maniera appropriata, esempio: 
+
+    .parent-1 per grafica 1.png
+    .parent-2 per grafica 2.png
+    ...
+*/
+
+/* child */
+
+.child-1{
+    width: 300px;
+    height: 200px;
+}
+
+.child-2{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+.child-3{
+    width: 300px;
+    height: 200px;
+    align-self: flex-start;
+}
+
+.child-4{
+    width: 312px;
+    height: 170px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.child-5{
+    height: 200px;
+    order: 100;
+    flex-basis: 100%;
+}
+
+.child-6{
+    width: 300px;
+    height: 150px;
+    align-self: flex-end;
+}
+
+.child-7{
+    width: 300px;
+    height: 171px;
+}
+
+.child-8{
+    width: 300px;
+    height: 150px;
+    align-self: flex-start;
+}
+
+.child-9{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.child-9a{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: +1;
+}
+.child-9b{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.child-10a{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none
+}
+.child-10b{
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.child-11{
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: +1;
+}
+.child-11a{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.child-11b{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: -2;
+}
+
+.child-11c{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: -1;
+}
+
+.child-12{
+    width: 300px;
+    height: 171px;
+    margin-bottom: 170px;
+}
+
+.child-13{
+    width: 300px;
+    height: 171px;
+    margin-top: 174px;
+}
+
+.child-13a{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.child-13b{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: -1;
+}
+
+.child-13c{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.child-14{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.child-14a{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.child-14b{
+    width: 167px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: -1;
+}
+
+.child-14c{
+    width: 167px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    order: -2;
+}
+
+.child-15{
+    width: 167px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* parent */ 
+
+.parent-1 {
+    align-items: center; /* posiziona l'elemento sull'asse delle Y */ 
+    display: flex;
+    justify-content: center; /* justifine-content = giustifica il contenuto sull'asse orizzontale */
+}
+
+.parent-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.parent-3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-4{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    padding: 30px;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.parent-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.parent-6{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.parent-7{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    padding: 0;
+}
+
+.parent-8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    min-height: 30em;
+}
+
+.parent-9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 62px;
+}
+
+.parent-10{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+
+.parent-11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 62px;
+    justify-content: center;
+}
+
+.parent-12{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 73px;
+}
+.parent-13{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+}
+
+.parent-14{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+}
+.parent-15{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+}
+
+.parent-16{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    padding: 30px;
+    justify-content: space-between;
+    gap: 25px;
+    min-height: 40em;
+}
