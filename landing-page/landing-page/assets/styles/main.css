@@ -1,6 +1,7 @@
 body{ 
     background-color: white;
     font-family: "Roboto Serif";
+    min-height: 4000px;
 }
 
 /* dobbiamo far si che l'immagine si adatti al display della macchina che guarderà il sito web */
@@ -27,10 +28,28 @@ img{
 }
 
 .site-header{
+/* sticky e fixed seguono la barra strumenti per tutta la pagina: 
+sticky: (non va a mangiare la hero-image, dunque si appoggia sopra di esso quando la pagina 
+è in alto, senza nascondere nessun pixel dell'immagine. 
+Fixed: (mangia la hero-image, dunque nasconde dei pixel dell'immagine */
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
     display:flex;
     justify-content: space-between;
-    text-align: center;
-}
+    align-items: center;
+    z-index: 99;
+    background-color: white;
+    nav{
+        li{
+            display: inline-block;
+        }
+    }
+    a{
+        color:black; 
+    }
+} 
 
 
 .hero {
@@ -52,8 +71,7 @@ img{
     bottom: 0;
     left: 0;
     height: 100%;
-    object-fit: cover; 
-    /* prende l'immagine e dice che deve occupare tutto lo spazio in altezza e larghezza, ma senza deformarsi quando rimpicciolisco e ingrandisco la pagina */
+    object-fit: cover; /* prende l'immagine e dice che deve occupare tutto lo spazio in altezza e larghezza, ma senza deformarsi quando rimpicciolisco e ingrandisco la pagina */
     opacity: 0.5;
 }
 
@@ -70,3 +88,74 @@ img{
         font-size: 1.75rem;
     }
 }
+.media-text {
+    display: flex;
+
+    .btn {
+        width: fit-content;
+        padding: 1em 2em;
+        background-color: greenyellow;
+        color: black;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+     }  
+
+     .btn:hover{
+        background-color: yellow;
+     }
+
+
+    .media-text-image-wrapper{
+        flex: 1 1 50%; /* 1 = flex-grow, ovvero quanto possono allungarsi / 0 = flex shrink(quanto possono diminuire la loro grandezza / 50% = flax basis specifica quanto almeno devono essere larghi. */ 
+    }
+
+    .hero-image{
+        opacity: 1;
+    }
+
+    .media-text-content-wrapper{
+        padding: 4em;
+        flex: 1 1 calc(50% - 8em);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    h2{
+        font-size: 2em;
+    }
+    
+    p{
+        font-size: 1.25em;
+        margin: 1.5em;
+
+    }
+
+}
+
+
+.media-text:nth-child(odd){ /* Con la funzione seguente diciamo di passare al secondo "media-text" degli attributi aggiuntivi, 
+                                dunque un flex direction: row-reverse */
+ flex-direction: row-reverse;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    /* body {
+      background-color: blue;
+    } */
+    .media-text{
+        display: block;  
+        /* applicando la proprietà display: block nella classe "media-text(figlio), permette di sovrascrivere quelle applicate nella "media text"(regina) 
+        facendo in modo di vedere le immagini e i testi nei dispositivi mobili in ordine sequenziale - {derivabilità delle classi} */
+    }
+
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
