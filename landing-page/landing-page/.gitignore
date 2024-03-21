@@ -1,2 +1,6 @@
 .vscode
 .DS_Store
+git rm -r --cached
+git add
+git commit -am "Remove igored files"
+git push
