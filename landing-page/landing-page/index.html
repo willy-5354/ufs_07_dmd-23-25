@@ -14,6 +14,11 @@
          <!-- inizializzo il font-size al mio sito web -->
         <link rel="stylesheet" href="assets/fonts/roboto_serif/stylesheet.css">
 
+        <!-- inizializzo le icone(posizionate dentro la cartella font) per la sezione dei contatti -->
+        <link rel="stylesheet" href="assets/fonts/iconfont/css/iconfont.css">
+        <!-- questa, invece, serve per l'internet explore -->
+        <link rel="stylesheet" href="assets/fonts/iconfont/css/iconfont-ie7.css">
+
         <link rel="stylesheet" href="assets/styles/reset.css">
           <!-- il reset.css è una pratica o concetto che ci serve per concatenare due file. Consentirà, quindi, di sovrascrivere il file aggiungendo più elementi(in questo caso per togliere lo spazio "width" dal lato della pagina sinistra) -->
         <link rel="stylesheet" href="assets/styles/main.css">
@@ -80,6 +85,115 @@
                     <h2> Lorem Ipsum</h1>
                      <p> qui ci sarà il paragrafo</p>
                      <a href="#" class="btn" title="Call to action"> Call to action</a>
+
+                </div>
+
+            </section>
+            
+            <!-- creiamo la sezione contatti con una lista di link -->
+            <section 
+
+            class="contact-section">
+
+                <!-- contenitore che conterrà le info -->
+                <div class="contact-section-info">
+
+                    <!-- A: inizializziamo la sezione contatti -->
+                    <h3>Contatti</h3>
+
+                    <!-- (ul = lista non ordinata -) (ol = lista ordinata)-->
+                    <ul> 
+
+                        <!-- creiamo una lista(li) NB: il tag(li) non può mai stare fuori da(ul)-->
+                        <li> 
+                            <a href="tel:+393312712683" title=" chiama il numero +393312712683">
+                            <!-- span = è un contenitore di in linea(inline), pericò non manda a capo gli altri elementi -->
+                            <span class="icon-mobile"></span><span>+39 3312712683</span>
+                        </a>
+
+                        </li>
+
+
+                        <li>
+                            
+                            <li> 
+                                <a href="mailto:w.russo@itsrizzoli.it" title="Scrivi una email a w.russo@itsrizzoli.it">
+                                <!-- span = è un contenitore di in linea(inline), perciò non manda a capo gli altri elementi -->
+                                <span class="icon-email"></span><span>scrivimi</span>
+                                </a>
+                            </li>
+
+                        </li>
+
+                    </ul>
+
+                    <!-- B: inizializziamo la sezione social  -->
+                    <h3>Social</h3>
+                    <ul class="list-social">
+
+                           <!-- facebook -->
+                        <li>
+                            <a href="https://instagra,.com" title="la nostra pagina facebook">
+                            <span class="icon-facebook"></span>
+                        </a>
+                        </li>
+
+                         <!-- Instagram -->
+                        <li>
+                            <a href="https://facebook.com" title="il nostro profilo instagram">
+                            <span class="icon-instagram"></span>
+                        </a>
+                        </li>
+
+                         <!-- whatsapp-->
+                        <li>
+                            <a href="https://whatsapp.com" title="il nostro profilo whatsapp">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- contenitore che conterrà i form-->
+                <div class="contact-section-form">
+
+                    <form>
+
+                    <div>
+                        <!-- label = da l'etichetta -->
+                        <label for="name">Nome:</label>
+                        <!-- l'input, invece, serve per far inserire all'utente i dati -->
+                        <input type="text" id="thename" name="name" placeholder="il tuo nome...">
+                    </div>
+
+                    <div>
+                        <label for="surname">Cognome:</label>
+                        <input type="text" id="thesurname" name="surname" placeholder="il tuo cognome...">
+                    </div>
+
+                    <!-- required significa campo richiesto -->
+                    <div>
+                        <label for="e-mail">indirizzo email:</label>
+                        <input type="text" id="thee-mail" name="e-mail" placeholder="il tuo indirizzo e-mail..." required>
+                    </div>
+
+                    <div>
+                        <label for="msg">Messaggio:</label>
+                        <textarea name="msg" id="msg" placeholder="Scrivi qui un messaggio..."></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="accept" id="accept" required> 
+                        <label for="accept">Accetto
+                        <a href="terms-conditions.html" title="termini e condizioni">Termini e condizioni</a>
+                    </label>
+                    </div>
+
+                    <button type="submit">Invia</button>
+
+                    </form>
 
                 </div>
 

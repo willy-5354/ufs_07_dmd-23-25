@@ -159,3 +159,52 @@ Fixed: (mangia la hero-image, dunque nasconde dei pixel dell'immagine */
       background-color: olive;
     }
   }
+
+  .contact-section{
+    display: flex;
+    padding: 4em;
+    background-color: #151515;
+
+    .contact-section-info,
+    .contact-section-form{
+        padding: 2em;
+        flex: 1 1 calc(50% - 4em);
+    }
+    
+    .contact-section-info{
+        background-color: white;
+        border-bottom-left-radius: 0.15em;
+        border-bottom-left-radius: 0.15em;
+    }
+    .contact-section-form{
+        background-color: #ddd;
+        border-top-right-radius: 0.15em;
+        border-bottom-left-radius: 0.15em;
+    }
+
+    h3{
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+
+    ul{
+        list-style-type: none;
+        margin-bottom: 2.5em;
+    }
+
+    .list-social{
+        li{
+            display: inline-block;
+        }
+    }
+
+    /* prendiamo in considerazione un attributo dell'html[icon], per fare in modo di assegnare la stessa prorpietà a tutti gli icon dell'html */
+    [class |="icon"] {
+        font-size: 1.75rem;
+    }
+
+    [class |="icon"] + span {
+        margin-left: 1em;
+    }
+}
