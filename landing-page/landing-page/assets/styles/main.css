@@ -27,6 +27,10 @@ img{
     color: black;
 }
 
+.background-title:hover{
+    background-color: #ddd;
+}
+
 .site-header{
 /* sticky e fixed seguono la barra strumenti per tutta la pagina: 
 sticky: (non va a mangiare la hero-image, dunque si appoggia sopra di esso quando la pagina 
@@ -199,7 +203,7 @@ Fixed: (mangia la hero-image, dunque nasconde dei pixel dell'immagine */
         }
     }
 
-    /* prendiamo in considerazione un attributo dell'html[icon], per fare in modo di assegnare la stessa prorpietà a tutti gli icon dell'html */
+    /* prendiamo in considerazione un attributo dell'html[icon], per fare in modo di assegnare la stessa proprietà a tutti gli icon dell'html */
     [class |="icon"] {
         font-size: 1.75rem;
     }
