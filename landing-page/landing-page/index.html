@@ -18,13 +18,15 @@
         <link rel="stylesheet" href="assets/fonts/iconfont/css/iconfont.css">
         <!-- questa, invece, serve per l'internet explore -->
         <link rel="stylesheet" href="assets/fonts/iconfont/css/iconfont-ie7.css">
-
+        <!-- inizializzo il file main.css -->
         <link rel="stylesheet" href="assets/styles/reset.css">
           <!-- il reset.css è una pratica o concetto che ci serve per concatenare due file. Consentirà, quindi, di sovrascrivere il file aggiungendo più elementi(in questo caso per togliere lo spazio "width" dal lato della pagina sinistra) -->
         <link rel="stylesheet" href="assets/styles/main.css">
+
     </head>
 
-    <body>
+    <body id="theBody">
+
         <header class="site-header" >
 
              <!-- inizalizzo un logo al mio web site-->
@@ -42,6 +44,12 @@
                 </ul>
             </nav>
            
+            <button type="button" class="ham-btn" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+             </button>
+
         </header>
 
     
@@ -200,6 +208,77 @@
             </section>
             
         </main>
+
+        <!-- inizializzo l'ultima parte del sito web che verrà visualizzata nella macchina -->
+        <footer class="site-footer">
+            
+            <div class="container">
+
+            <!-- primo contenitore orizzontale per la struttura del footer -->
+            <div class="site-footer-primary"> 
+
+                <!-- con questo div implementiamo il logo -->
+                <div class="col-1-3">
+                    <a href="stylesheet" class="site-logo-wrapper" title="Clicca qui per tornare alla HomePage"> 
+                 <img src="assets/images/logo.jpeg" alt="immagine logo" class="image_logo"></a>
+                </div>
+
+                <!-- con questo div, invece, implementiamo l'indirizzamento ai link dei social -->
+                <div class="col-2-3">
+                    <h3>Social</h3>
+                    <ul class="list-social">
+
+                           <!-- facebook -->
+                        <li>
+                            <a href="https://facebook.com" title="la nostra pagina facebook">
+                            <span class="icon-facebook"></span>
+                        </a>
+                        </li>
+
+                         <!-- Instagram -->
+                        <li>
+                            <a href="https://instagram.com" title="il nostro profilo instagram">
+                            <span class="icon-instagram"></span>
+                        </a>
+                        </li>
+
+                         <!-- whatsapp-->
+                        <li>
+                            <a href="https://whatsapp.com" title="il nostro profilo whatsapp">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                </div>
+
+                <!-- secondo contenitore orizzontale per la struttura del footer -->
+                <div class="site-footer-secondary">
+                    <ul>
+                        <li>
+                            <a href="terms-conditions.html" title="termini e condizioni">termini e condizioni</a>
+                        </li>
+
+                        <li>
+                            <a href="terms-conditions.html" title="Privacy Policy">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="terms-conditions.html" title="Cookie Policy"> Cookie Policy</a>
+                        </li>
+                    </ul>
+
+                </div>
+       
+            </div>
+                
+        </footer>
+
+        <!-- tutti i file javascript si immettono alla fine del codice html(perchè altrimenti andrebbero a intralciare il caricamento del bytecode del file html) e prima della chiusura del tag body -->
+        <script src="assets/scripts/app.js"></script>
     
     </body>
 

@@ -11,6 +11,27 @@ img{
     width: 100%;
 }
 
+form{
+    label{
+        display: block;
+        border: 0.5em 0 0.25em;
+    }
+
+    /* applichiamo alle proprietà (textarea e input) degli attributi di tipo (border e width). Il not su checkbox significa che quell'input non riceverà gli attributi immessi su textarea e input */
+    textarea,
+    input:not([type="checkbox"]) {
+        width: 100%;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        background-color: transparent;
+    }
+
+    input + label{
+        display: inline-block;
+    }
+}
+
 
 .site-logo-wrapper img{
     max-width: 120px;
@@ -212,3 +233,63 @@ Fixed: (mangia la hero-image, dunque nasconde dei pixel dell'immagine */
         margin-left: 1em;
     }
 }
+
+/* modifichiamo la sezione footer */
+.site-footer{
+    padding-top: 1em;
+    background-color: black;
+
+    ul {
+        li{
+            display: inline-block;
+        }
+    }
+
+    /* modifichiamo il primo contenitore orizzontale(div) della struttura "footer" */
+    .site-footer-primary{
+        display: flex;
+        .col-1-3{
+            flex: 1 1 33.33%;
+        }
+
+        .col-2-3{
+            flex: 1 1 66.66%;
+            text-align: right;
+        a{
+            color: white;
+            font-size: 2rem;
+             }
+         }
+    }
+
+    /* applichiamo attributi al secondo contenutore orizzontale(div) della struttura "footer" */
+    .site-footer-secondary{
+        padding: 1em 0;
+        border-top: 1px solid #5b5b5b;
+        margin-top: 1em;
+        text-align: center;
+            li{
+                margin: 0 0.5em;
+            }
+
+            a{
+                color: #616161;
+                font-size: 0.75rem;
+            }
+    }
+}
+
+.containter{
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-is-open{
+    
+    .site-header{
+    background-color: red;
+    }
+}
+
+/* END CLASSES */ 
