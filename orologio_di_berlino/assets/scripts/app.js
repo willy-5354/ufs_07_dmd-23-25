@@ -11,9 +11,9 @@ setInterval(() => {
     let = date.getMinutes();
     let = date.getSeconds();
 
-    let hr_rotate = 30 * hr + min /2; //converting current time
-    let mn_rotate = 6 * min;
-    let sec_rotate = sec;
+    let hr_rotate = 30 * hour + minute /12; //converting current time
+    let mn_rotate = 6 * minute;
+    let sec_rotate = second;
 
     hour.style.transform = `rotate(${hr_rotate}deg)`;
     minute.style.transform = `rotate(${mn_rotate}deg)`;
