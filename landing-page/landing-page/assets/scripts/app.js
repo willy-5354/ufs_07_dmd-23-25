@@ -6,12 +6,15 @@
     righe
 */ 
 
+
 // le prime tre tipologie basi che potremmo incontrare per le variabili: 
+
+// var = creazione di una variaile
 
 // variabile di sola lettura
 const name = 'william'; 
 
-// variabile di lettura e scrittura(ovvero posso leggerla e modificarla) [NB: let e var sono la stessa cosa] 
+// variabile di lettura e scrittura(ovvero posso leggerla e modificarla) [ NB: let e var sono la stessa cosa ] 
 let age = 21; 
 let isWorking = true;
 let ISworking = "certo";
@@ -29,3 +32,20 @@ function togglemenu(){
 }
 
 btn.addEventListener("click", togglemenu);
+
+
+// carosello --> implementiamo la funzione delle freccie in app.js
+const carouselContainer = document.getElementById("slide-container");
+const prevButton = document.getElementById("carousel-arrow-prev");
+const nextButton = document.getElementById("carousel-arrow-next");
+const carousel = document.querySelector(".slide");
+
+nextButton.addEventListener("click", (event) => {
+    let carouselWidth = carousel.clientWidth;
+    carouselContainer.scrollLeft += carouselWidth;
+});
+
+prevButton.addEventListener("click", () => {
+    let carouselWidth = carousel.clientWidth;
+    carouselContainer.scrollLeft -= carouselWidth;
+});
