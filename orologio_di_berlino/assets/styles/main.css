@@ -5,12 +5,13 @@
 }
 
 .hour,.minute,.second{
-    width: 8px;
-    height: 280px;
     position: absolute;
     border-radius: 10px;
-    transform-origin: bottom;
     margin-top: 20px;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -42,28 +43,45 @@
 
 
 .clock{
-    position: absolute;
-    margin-left: 250px;
-    margin-right: 250px;
     top: 250px;
-    margin-bottom: 250px;
-    border-radius: 300px;
     border: 5px solid black;
+    display: flex;
+    position: absolute;
+    height: 580px;
+}
+
+.radius{
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: green;
+    top: 540px;
+    z-index: 4;
 }
 
 .hour{
+    height: 280px;
+    width: 12px;
     background-color: black;
     left: 48.58%;
+    z-index: 3;
 
 }
 
 .minute{
-    background-color: black;
+    height: 280px;
+    width: 12px;
+    background-color: red;
     left: 48.58%;
+    z-index: 2;
 }
 
 .second{
-    background-color: black;
+    height: 280px;
+    width: 5px;
+    background-color: green;
     left: 48.58%;
+    z-index: 1;
 }
 /* End classes */

@@ -4,18 +4,20 @@ setInterval(() => {
     let minute = document.getElementById("minute");
     let second = document.getElementById("second");
 
+
     // ogetto per date
     let date = new Date();
+    
     // method
-    let = date.getHours();
-    let = date.getMinutes();
-    let = date.getSeconds();
+    let hr = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
 
-    let hr_rotate = 30 * hour + minute /12; //converting current time
-    let mn_rotate = 6 * minute;
-    let sec_rotate = second;
+    let hr_rotate = (hr % 12) * 30 + mm / 2; // Calcola l'angolo per l'ora (12 ore => 360 gradi)
+    let mn_rotate = mm * 6 + ss / 10; // Calcola l'angolo per il minuto (60 minuti => 360 gradi)
+    let sec_rotate = ss * 6; // Calcola l'angolo per il secondo (60 secondi => 360 gradi) 
 
     hour.style.transform = `rotate(${hr_rotate}deg)`;
     minute.style.transform = `rotate(${mn_rotate}deg)`;
     second.style.transform = `rotate(${sec_rotate}deg)`;
-},1000);
+}, 1000);
