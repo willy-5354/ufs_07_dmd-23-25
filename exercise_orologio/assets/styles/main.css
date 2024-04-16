@@ -1,17 +1,18 @@
 .the_main{
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
     align-items: center;
+    padding: 2à0px;
 }
 
 .hour,.minute,.second{
     position: absolute;
     border-radius: 10px;
-    margin-top: 20px;
-    transform: rotate(45deg);
     transform-origin: bottom;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -43,11 +44,10 @@
 
 
 .clock{
-    top: 250px;
     border: 5px solid black;
     display: flex;
-    position: absolute;
     height: 580px;
+    justify-content: center;
 }
 
 .radius{
@@ -56,7 +56,6 @@
     height: 35px;
     position: absolute;
     background-color: green;
-    top: 540px;
     z-index: 4;
 }
 
@@ -64,7 +63,6 @@
     height: 280px;
     width: 12px;
     background-color: black;
-    left: 48.58%;
     z-index: 3;
 
 }
@@ -73,7 +71,6 @@
     height: 280px;
     width: 12px;
     background-color: red;
-    left: 48.58%;
     z-index: 2;
 }
 
@@ -81,7 +78,6 @@
     height: 280px;
     width: 5px;
     background-color: green;
-    left: 48.58%;
     z-index: 1;
 }
 /* End classes */
