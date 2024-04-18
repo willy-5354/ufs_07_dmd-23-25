@@ -122,6 +122,15 @@ body {
     margin: 70px 0 20px;
 }
 
+.cities{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 200px; 
+    
+}
+
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
@@ -136,7 +145,12 @@ body {
 }
 
 .city {
-    color: white;
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: max-content;
+    border: black 3px solid;
+    box-shadow: 5px 5px 5px white;
 }
 
 

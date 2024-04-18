@@ -1,12 +1,12 @@
 .the_main{
-    display: flex;
-    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     right: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 2à0px;
+    padding: 2px;
 }
 
 .hour,.minute,.second{
@@ -20,11 +20,6 @@
 
 /* Initial classes */
 .site-header{
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 99;
     background-color: purple;
     display: flex;
     justify-content: space-between;

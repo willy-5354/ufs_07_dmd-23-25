@@ -24,6 +24,47 @@ form.addEventListener("submit", event => {
     .then(data => {
         console.log(data);
     // vado a definire le etichette del mio oggetto(data)
-    const {main, name, sys, weather } = data;
+    const {main, name, sys, weather, wind, dt } = data;
+    const icon = `https://openweathermap.org/img/wn/${weather[0]["icon"]}@2x.png`;
+    const caption = weather[0]["description"];
+    // contiene l'oggetto document con la quale
+    const li = document.createElement("li");
+    // leggiamo la variabile li e usiamo il metodo add per aggiungere la classe città 
+    li.classList.add("city");
+    const markup = `
+        <div class = "city-time">Date time:
+        <time>${dt}</time>
+        </div>
+        <h2 class= "city-name">
+        <span>${name}</span> 
+        <sup>${sys.country}</sup>
+        </h2> 
+        <div class="city-temp">
+        <span>${Math.round(main.temp)}</span>
+        <sup>°C</sup>
+        </div>
+        <div class="city-wind">Wind:
+        <span>${wind.speed}</span>
+        </div>
+        <div class="city-deg">
+        <span>${wind.deg}</span>
+        </div>
+        <figure>
+        <img src="${icon}" alt"${caption}"  class = "city-icon"
+        <figcaption>${caption}</figcapition>
+        </figure>
+        `;
+
+        // metti dentro "li" tutto ciò che abbiamo scritto in markup
+        li.innerHTML = markup;
+        list.appendChild(li);
+    }) 
+    .catch(() => {
+        msg.textContent = "città non trovata, prova di nuovo"
     });
+    msg.textContent = ""; 
+    // con il metodo form.reset() = svuotiamo il form e togliamo tutto ciò che ha scritto
+    form.reset();
+    // con il metodo input.focus() = permette di mandare la richiesta direttamente dall'inpu della tastiera senza premere per forza con il mouse da submit
+    input.focus();
 });
